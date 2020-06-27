@@ -31,6 +31,7 @@ public class removeDup {
 		return head;
 	}
 	
+	//method for displaying and printing nodes
 	public static void displayNodes(Node head) {
 		Node n = head;
 		while(n.next != null) {
@@ -40,7 +41,7 @@ public class removeDup {
 		System.out.println(n.data);
 	}
 	
-	
+	//driver code
 	public static void main(String[] args) {
 		Node n = new Node(4);
 		n.next = new Node(2);
