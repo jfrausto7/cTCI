@@ -34,5 +34,15 @@ public class Node {
 		}
 		return head;
 	}
+	
+	//method for getting count of a LinkedList
+		public static int getLength(Node head) {
+			int counter = 1;
+			while(head.next != null) {
+				counter++;
+				head = head.next;
+			}
+			return counter;
+		}
 
 }
