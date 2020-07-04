@@ -1,5 +1,7 @@
 package cTCI;
 
+import cTCI.data_structures.Node;
+
 public class deleteMid {
 	public static Node deleteMid(Node mid) {
 		if(mid == null) return null;

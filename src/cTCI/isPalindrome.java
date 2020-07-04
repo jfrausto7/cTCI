@@ -2,6 +2,8 @@ package cTCI;
 
 import java.util.Stack;
 
+import cTCI.data_structures.Node;
+
 public class isPalindrome {
 	public static boolean isPalindrome(Node head) {
 		if(head == null) return false;	//null base case

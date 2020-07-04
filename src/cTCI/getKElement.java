@@ -1,5 +1,7 @@
 package cTCI;
 
+import cTCI.data_structures.Node;
+
 public class getKElement {
 	public static Node getKElement(Node head, int k) {
 	int count = 1;

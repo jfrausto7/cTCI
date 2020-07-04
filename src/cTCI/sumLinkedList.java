@@ -1,5 +1,7 @@
 package cTCI;
 
+import cTCI.data_structures.Node;
+
 public class sumLinkedList {
 	public static Node sumLinkedList(Node head1, Node head2) {
 		Node a = head1;

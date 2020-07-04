@@ -1,6 +1,9 @@
 package cTCI;
 
 import java.util.HashMap;
+
+import cTCI.data_structures.Node;
+
 import java.util.*;
 
 public class removeDup {

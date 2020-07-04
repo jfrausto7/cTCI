@@ -2,6 +2,8 @@ package cTCI;
 
 import java.util.HashMap;
 
+import cTCI.data_structures.Node;
+
 public class isLoop {
 	public static Node isLoop(Node head) {
 		HashMap<Node, Integer> nodes  = new HashMap<Node, Integer>();

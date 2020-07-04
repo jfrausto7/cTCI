@@ -1,5 +1,7 @@
 package cTCI;
 
+import cTCI.data_structures.Node;
+
 public class findIntersection {
 	public static Node findIntersection(Node a, Node b) {
 		//first check base case

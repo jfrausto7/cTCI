@@ -1,5 +1,7 @@
 package cTCI;
 
+import cTCI.data_structures.Node;
+
 public class partitionNode {
 	public static Node partitionNode(Node head, int x) {
 		Node left = null;
