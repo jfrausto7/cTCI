@@ -4,14 +4,6 @@ import cTCI.data_structures.MyStack.EmptyStackException;
 import cTCI.data_structures.MyStack.StackNode;
 
 public class SetOfStacks {
-	public static class StackNode<Integer>{
-		public int data;
-		public StackNode<Integer> next;
-		
-		public StackNode(int data) {
-			this.data = data;
-		}
-	}
 	
 	public SubStack<Integer> first;
 	public SubStack<Integer> currentStack;
