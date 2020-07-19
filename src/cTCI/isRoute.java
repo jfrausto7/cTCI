@@ -9,7 +9,7 @@ public class isRoute {
 	public static boolean isRoute(GraphNode S, GraphNode E) {
 		Stack<GraphNode> adjacent = new Stack<GraphNode>();
 		
-		if(S == null || S.children.length == 0) {
+		if(S == null || S.children.size() == 0) {
 			System.out.println("No children or node.");
 			return false;
 		}
@@ -40,27 +40,22 @@ public class isRoute {
 		Graph graph = new Graph();
 		
 		
-		GraphNode node0 = new GraphNode();
-		node0.name = "0";
-		GraphNode node1 = new GraphNode();
-		node1.name = "1";
-		GraphNode node2 = new GraphNode();
-		node2.name = "2";
-		GraphNode node3 = new GraphNode();
-		node3.name = "3";
-		GraphNode node4 = new GraphNode();
-		node4.name = "4";
-		GraphNode node5 = new GraphNode();
-		node5.name = "5";
-		
-		node0.children = new GraphNode[] {node1, node4, node5};
-		node1.children = new GraphNode[] {node3, node4};
-		node2.children = new GraphNode[] {node1};
-		node3.children = new GraphNode[] {node2, node4};
-		node4.children = new GraphNode[0];
-		node5.children = new GraphNode[0];
+		GraphNode node0 = new GraphNode("0");
+		GraphNode node1 = new GraphNode("1");
+		GraphNode node2 = new GraphNode("2");
+		GraphNode node3 = new GraphNode("3");
+		GraphNode node4 = new GraphNode("4");
+		GraphNode node5 = new GraphNode("5");
 		
 		graph.nodes = new GraphNode[]{node0, node1, node2, node3, node4, node5}; 
+		graph.addEdge(node0, node1);
+		graph.addEdge(node0, node4);
+		graph.addEdge(node0, node5);
+		graph.addEdge(node1, node3);
+		graph.addEdge(node1, node4);
+		graph.addEdge(node2, node1);
+		graph.addEdge(node3, node2);
+		graph.addEdge(node3, node4);
 		
 		
 		
