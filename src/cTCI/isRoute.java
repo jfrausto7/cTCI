@@ -47,7 +47,12 @@ public class isRoute {
 		GraphNode node4 = new GraphNode("4");
 		GraphNode node5 = new GraphNode("5");
 		
-		graph.nodes = new GraphNode[]{node0, node1, node2, node3, node4, node5}; 
+		graph.nodes.add(node0); 
+		graph.nodes.add(node1); 
+		graph.nodes.add(node2); 
+		graph.nodes.add(node3); 
+		graph.nodes.add(node4); 
+		graph.nodes.add(node5); 
 		graph.addEdge(node0, node1);
 		graph.addEdge(node0, node4);
 		graph.addEdge(node0, node5);
